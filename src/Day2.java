@@ -24,5 +24,4 @@ public class Day2 {
         out.printf("Part one: %s",sum);
         out.printf("Part two: %s",sum2);
     }
-
 }
