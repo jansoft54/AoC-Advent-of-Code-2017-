@@ -10,7 +10,7 @@ public class Day1 {
     private static void compute(Function<Integer, Character> lambda, String part, String nums) {
         int sum = 0;
         for (int i = 0; i < nums.length(); ++i)
-            if ((nums.charAt(i) - '0') == lambda.apply(i) - '0')
+            if (nums.charAt(i) == lambda.apply(i))
                 sum += (nums.charAt(i) - '0');
         out.printf("%s: %s", part, sum);
     }
