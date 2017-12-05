@@ -6,7 +6,6 @@ public class Day5 {
         int[] nums = new int[instructions.size()];
         for (int i = 0; i < instructions.size(); i++) {
             nums[i] = Integer.parseInt(instructions.get(i));
-            System.out.println(nums[i]);
         }
         int counter = 0, current = 0, jump = 0;
         for (; ; ) {
@@ -15,7 +14,6 @@ public class Day5 {
             if (current + jump >= nums.length) break;
             nums[current] += nums[current] >= 3 ? -1 : 1;
             current += jump;
-
         }
         System.out.println("counter" + counter);
     }
