@@ -1,10 +1,13 @@
 import java.util.ArrayList;
+import static java.lang.System.out;
 
 import static java.lang.System.out;
 
 public class Day5 {
     public static void main(String... msrgs) {
-        ArrayList<String> instructions = IO.ReadLine("C:\\Users\\jhard\\IdeaProjects\\Advent of Code\\src\\inputs\\day5.txt");
+
+     
+        ArrayList<String> instructions = IO.ReadLine("FILENAME");
         int[] nums0 = new int[instructions.size()];
         int[] nums1 = new int[instructions.size()];
         for (int i = 0; i < instructions.size(); i++) {
